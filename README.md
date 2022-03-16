@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-visit online [jordanshop](https://jordanshopp-mhm-dmc.netlify.app/home).
+visit online [jordanshop](https://jordanshopp-mhm-dmc.netlify.app).
 
 ## Guide
 
