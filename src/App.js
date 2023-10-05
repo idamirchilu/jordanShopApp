@@ -8,6 +8,7 @@ import Auth from "./pages/Auth";
 import { useSelector, useDispatch } from "react-redux";
 import { sendCartData, fetchCartData } from "./store/cart-slice";
 import { useEffect } from "react";
+import ShareComponent from "./ShareComponent";
 
 function App() {
   const cartState = useSelector((state) => state.cart);
@@ -30,10 +31,10 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" exact element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Auth />} />
-        <Route path="/link" element={<Link />} />
+        <Route path="/home" element={<ShareComponent />} />
+        {/*<Route path="/cart" element={<Cart />} />*/}
+        {/*<Route path="/login" element={<Auth />} />*/}
+        {/*<Route path="/link" element={<Link />} />*/}
       </Routes>
     </Layout>
   );
