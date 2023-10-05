@@ -1,10 +1,6 @@
 import "./App.css";
 import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Cart from "./pages/Cart";
-import Link from "./pages/Link";
-import Auth from "./pages/Auth";
 import { useSelector, useDispatch } from "react-redux";
 import { sendCartData, fetchCartData } from "./store/cart-slice";
 import { useEffect } from "react";

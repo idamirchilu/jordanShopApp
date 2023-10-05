@@ -9,8 +9,9 @@ export default function ShareComponent(){
             text: "text",
             url: "https://jordanshopp-mhm-dmc.netlify.app/"
         }
-        await navigator.share(data)
+        if (navigator.canShare(data))
+            await navigator.share(data)
     }
 
-    return <button className='btn btn-primary' onClick={shareHandler}>share</button>
+    return <button onClick={shareHandler}>share</button>
 }
